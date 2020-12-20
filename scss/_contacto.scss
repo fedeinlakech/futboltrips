@@ -1,0 +1,122 @@
+/*   C O N T A C T O   */
+
+.contacto {
+    h2 {
+        margin: 25px 0;
+    }
+    form div {
+        margin: 0 0px 30px;
+        label {
+            width: 80%;
+            padding: 10px 0 10px 10px;
+            text-transform: uppercase;
+            border: solid 3px gray;
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-size: 1rem;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        input {
+            width: 80%;
+            border: solid 3px grey;
+            padding-left: 10px;
+            background-color: white;
+            padding: 10px 0 10px 10px;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        select {
+            background-color: white;
+            padding: 10px 0 10px 10px;
+            border: solid 3px grey;
+            margin: 0 auto;
+            display: block;
+        }
+        &.area {
+            label {
+                flex-basis: 300px;
+                border: none;
+                color: white;
+                background-color: $bg-color;
+                margin-bottom: 0;
+            }
+            textarea {
+                padding: 15px;
+                background-color: white;
+                border: solid 3px grey;
+                height: 200px;
+                width: 80%;
+                margin: 0 auto 10px auto;
+                display: block;
+            }
+        }
+        .contacto__boton {
+            flex-basis: 200px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #131314;
+            font-weight: 700;
+            background-color: #bedbbb;
+            padding: 10px 20px;
+            &:hover {
+                background-color: green;
+                color: white;
+            }
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    .contacto {
+        form div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            label {
+                flex-basis: 150px;
+                text-align: left;
+                display: inline-block;
+                margin: 0 10px;
+            }
+            input {
+                flex-basis: 300px;
+                display: inline-block;
+                margin: 0;
+            }
+            select {
+                display: inline-block;
+                margin: 0;
+            }
+            &.news {
+                label {
+                    flex-basis: 330px;
+                }
+                input {
+                    display: block;
+                    flex-basis: 20px;
+                    height: 50px;
+                    margin: 0;
+                }
+            }
+            &.area {
+                flex-direction: column;
+                label {
+                    display: block;
+                    width: auto;
+                    padding: 10px;
+                    flex-basis: auto;
+                    margin: 0;
+                }
+                textarea {
+                    display: block;
+                    flex-basis: 130px;
+                    width: 465px;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

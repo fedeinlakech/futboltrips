@@ -1,0 +1,57 @@
+/*   G E N E R A L E S   */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-font;
+    background-color: $bg-color;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $main-color;
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-weight: 700;
+}
+
+h2,
+h3,
+h4 {
+    font-family: $title-font;
+    text-align: center;
+    padding: 20px 0;
+    color: $main-color;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 1rem;
+    padding-top: 0;
+}
+
+ul li {
+    list-style-type: none;
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $main-color;
+    }
+}

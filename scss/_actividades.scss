@@ -1,0 +1,55 @@
+/*   A C T I V I D A D E S   */
+
+.actividades {
+    h2 {
+        margin-bottom: 50px;
+    }
+    ul {
+        margin-bottom: 60px;
+        li {
+            margin-top: 20px;
+            list-style-type: none;
+            font-size: 1rem;
+            line-height: 2;
+            margin-left: 20px;
+            i {
+                margin-right: 10px;
+                color: green;
+                font-size: 1.4rem;
+            }
+        }
+        ul li {
+            margin-left: 30px;
+            line-height: 1.3;
+        }
+    }
+    .actividades__mapaEuropa img {
+        width: 80%;
+        margin: 10px auto 60px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .actividades .actividades__mapaEuropa img {
+        height: 40%;
+        width: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .actividades .actividades__mapaEuropa img {
+        height: 60%;
+        width: auto;
+    }
+    .carousel div img {
+        width: 80% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .actividades .actividades__mapaEuropa img {
+        height: 80%;
+        width: auto;
+    }
+}
