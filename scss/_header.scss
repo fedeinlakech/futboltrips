@@ -1,64 +1,69 @@
-/*   H E A D E R   */
-
-@mixin displays($display, $flex-direction, $align-items) {
-    display: $display;
-    flex-direction: $flex-direction;
-    align-items: $align-items;
-}
-
-header {
-    background-color: $hdft-color;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    position: fixed;
-    z-index: 7;
-    .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .header__logo {
-            flex-basis: 60%;
-            img {
-                width: 100%;
-                margin: 0;
-                display: inline-block;
-            }
-        }
-        nav {
-            &.header__menu div ul li a {
-                color: $main-color !important;
-                font-size: 1rem;
-                padding: 5px 8px !important;
-                transition: ease-in-out .5s;
-                &:hover {
-                    color: green !important;
-                    font-size: 1.2rem;
-                    text-decoration: none;
-                }
-            }
-            .navbar-toggler {
-                border-color: $main-color;
-                margin: 0 auto 10px auto;
-            }
-            .navbar-collapse {
-                text-align: center;
-            }
-        }
+    /*   H E A D E R   */
+    
+    @mixin displays($display, $flex-direction, $align-items) {
+        display: $display;
+        flex-direction: $flex-direction;
+        align-items: $align-items;
     }
-}
-
-@media(min-width: 768px) {
+    
     header {
+        background-color: $hdft-color;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        position: fixed;
+        z-index: 7;
         .header {
-            @include displays(flex, row, center);
-            justify-content: space-between;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             .header__logo {
-                flex-basis: 30%;
+                flex-basis: 60%;
                 img {
                     width: 100%;
+                    margin: 0;
+                    display: inline-block;
+                }
+            }
+            nav {
+                &.header__menu div ul li a {
+                    color: $main-color !important;
+                    font-size: 1rem;
+                    padding: 5px 8px !important;
+                    transition: ease-in-out .5s;
+                    &:hover {
+                        color: white !important;
+                        font-size: 1.2rem;
+                        text-decoration: none;
+                    }
+                }
+                .navbar-toggler {
+                    border-color: $main-color;
+                    margin: 0 auto 10px auto;
+                }
+                .navbar-collapse {
+                    text-align: center;
                 }
             }
         }
     }
-}
+    
+    @media(min-width: 768px) {
+        header {
+            .header {
+                @include displays(flex, row, center);
+                justify-content: space-between;
+                .header__logo {
+                    flex-basis: 30%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                nav ul li a {
+                    &.active {
+                        background: green;
+                    }
+                }
+            }
+        }
+    }
