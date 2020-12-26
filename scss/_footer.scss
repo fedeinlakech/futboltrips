@@ -8,6 +8,7 @@ footer {
         align-items: center;
         .footer__logo {
             flex-basis: 30%;
+            margin-top: 0;
             img {
                 width: 100%;
             }
@@ -37,11 +38,17 @@ footer {
         }
         .footer__redes {
             flex-basis: 30%;
-            display: flex;
-            justify-content: flex-end;
-            img {
-                width: 40px;
-                margin: 0 0 0 10px;
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 0;
+                li {
+                    padding-right: 15px;
+                    a i {
+                        color: green;
+                        font-size: 2.5rem;
+                    }
+                }
             }
         }
     }
@@ -50,15 +57,17 @@ footer {
         text-align: center;
         margin-bottom: 0;
     }
-    a i {
-        position: fixed;
-        bottom: 50px;
-        right: 50px;
-        font-size: 40px;
-        background-color: green;
-        border-radius: 10px;
-        color: white;
-        padding: 10px;
+    a.footer__top {
+        i {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            font-size: 40px;
+            background-color: green;
+            border-radius: 10px;
+            color: white;
+            padding: 10px;
+        }
     }
 }
 
@@ -70,7 +79,7 @@ footer {
             .footer__logo {
                 flex-basis: 20%;
                 img {
-                    margin-top: 20px;
+                    padding-top: 15px;
                 }
             }
             .footer__menu {
@@ -84,9 +93,8 @@ footer {
             }
             .footer__redes {
                 flex-basis: 20%;
-                img {
-                    width: 50px;
-                    margin: 0 0 0 20px;
+                ul li {
+                    padding-right: 25px;
                 }
             }
         }
