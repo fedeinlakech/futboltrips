@@ -2,7 +2,7 @@
     "author": "Federico Lee",
     "description": "Sitio Web Coderhouse Camada 10755",
     "license": "MIT",
-    "name": "desafio_clase11",
+    "name": "FutbolTrips",
     "scripts": {
         "watch:css": "nodemon -e scss -x \"npm run build:css\"",
         "build:css": "node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js --output-style compressed scss/estilos.scss css/main.css && npm run css-autoprefixer",
