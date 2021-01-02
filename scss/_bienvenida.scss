@@ -1,19 +1,18 @@
 /*   B I E N V E N I D A   */
 
 .bienvenida {
-    padding: 70px 0 50px 0;
+    padding: 100px 0 50px 0;
     .hero__image {
-        position: relative;
         background-image: url(../images/anfield.jpg);
         background-repeat: no-repeat;
         background-position: bottom center;
         filter: saturate(.7);
-        margin-top: 30px;
+        margin-top: 0px;
         background-size: cover;
         height: 100vh;
         .bienvenida__h1 {
             h1 {
-                padding-top: 100px;
+                padding-top: 20px;
                 color: green;
                 text-shadow: 4px 4px 5px $bg-color;
                 letter-spacing: 2px;
@@ -23,21 +22,18 @@
             p {
                 text-align: center;
                 font-size: 2.2rem;
-                color: black;
+                color: white;
                 font-family: $title-font;
-                font-weight: 1000;
+                font-weight: 700;
+                text-shadow: 3px 3px 1px green;
             }
         }
         .hero__text {
             text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 2rem;
+            color: $main-color;
+            font-size: 1.3rem;
             font-family: 'Acme', sans-serif;
-            text-shadow: 3px 3px 1px green;
+            text-shadow: 2px 2px 2px black;
         }
     }
 }
@@ -49,14 +45,15 @@
             background-attachment: fixed;
             .bienvenida__h1 {
                 h1 {
-                    padding-top: 150px;
+                    padding-top: 50px;
                 }
                 p {
                     font-size: 2.5rem;
                 }
             }
             .hero__text {
-                font-size: 2.2rem;
+                padding-top: 70px;
+                font-size: 1.5rem;
             }
         }
     }
