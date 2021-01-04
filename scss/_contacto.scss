@@ -8,59 +8,58 @@
     form div {
         margin: 0 0px 30px;
         label {
-            width: 80%;
-            padding: 10px 0 10px 10px;
-            text-transform: uppercase;
-            border: solid 3px gray;
             background-color: white;
+            border: solid 3px gray;
             color: black;
-            text-align: center;
-            font-size: 1rem;
             display: block;
+            font-size: 1rem;
             margin: 0 auto 10px auto;
+            padding: 10px 0 10px 10px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 80%;
         }
         input {
-            width: 80%;
-            border: solid 3px grey;
-            padding-left: 10px;
             background-color: white;
-            padding: 10px 0 10px 10px;
+            border: solid 3px grey;
             display: block;
             margin: 0 auto 10px auto;
+            padding: 10px 0 10px 10px;
+            width: 80%;
         }
         select {
             background-color: white;
-            padding: 10px 0 10px 10px;
             border: solid 3px grey;
-            margin: 0 auto;
             display: block;
+            margin: 0 auto;
+            padding: 10px 0 10px 10px;
         }
         &.area {
             label {
-                flex-basis: 300px;
+                background-color: $bg-color;
                 border: none;
                 color: white;
-                background-color: $bg-color;
+                flex-basis: 300px;
                 margin-bottom: 0;
             }
             textarea {
-                padding: 15px;
                 background-color: white;
                 border: solid 3px grey;
-                height: 200px;
-                width: 80%;
-                margin: 0 auto 10px auto;
                 display: block;
+                height: 200px;
+                margin: 0 auto 10px auto;
+                padding: 15px;
+                width: 80%;
             }
         }
         .contacto__boton {
+            background-color: #bedbbb;
+            color: #131314;
             flex-basis: 200px;
             font-size: 1rem;
-            text-transform: uppercase;
-            color: #131314;
             font-weight: 700;
-            background-color: #bedbbb;
             padding: 10px 20px;
+            text-transform: uppercase;
             &:hover {
                 background-color: green;
                 color: white;
@@ -72,18 +71,18 @@
 @media(min-width: 576px) {
     .contacto {
         form div {
+            align-items: center;
             display: flex;
             justify-content: center;
-            align-items: center;
             label {
-                flex-basis: 150px;
-                text-align: left;
                 display: inline-block;
+                flex-basis: 150px;
                 margin: 0 10px;
+                text-align: left;
             }
             input {
-                flex-basis: 300px;
                 display: inline-block;
+                flex-basis: 300px;
                 margin: 0;
             }
             select {
@@ -105,17 +104,17 @@
                 flex-direction: column;
                 label {
                     display: block;
-                    width: auto;
-                    padding: 10px;
                     flex-basis: auto;
                     margin: 0;
+                    padding: 10px;
+                    width: auto;
                 }
                 textarea {
                     display: block;
                     flex-basis: 130px;
-                    width: 465px;
                     margin-left: 0;
                     margin-right: 0;
+                    width: 465px;
                 }
             }
         }

@@ -1,11 +1,11 @@
 /*   F O O T E R   */
 
 footer {
-    margin-top: 40px;
     background-color: $hdft-color;
+    margin-top: 40px;
     .footer__container {
-        display: flex;
         align-items: center;
+        display: flex;
         .footer__logo {
             flex-basis: 30%;
             margin-top: 0;
@@ -16,10 +16,10 @@ footer {
         .footer__menu {
             flex-basis: 40%;
             ul {
+                align-items: center;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
                 padding-top: 20px;
                 li {
                     display: block;
@@ -53,20 +53,20 @@ footer {
         }
     }
     p {
+        margin-bottom: 0;
         padding: 15px 0;
         text-align: center;
-        margin-bottom: 0;
     }
     a.footer__top {
         i {
-            position: fixed;
-            bottom: 50px;
-            right: 50px;
-            font-size: 40px;
             background-color: green;
             border-radius: 10px;
+            bottom: 50px;
             color: white;
+            font-size: 40px;
             padding: 10px;
+            position: fixed;
+            right: 50px;
         }
     }
 }
@@ -74,8 +74,8 @@ footer {
 @media(min-width: 992px) {
     footer {
         .footer__container {
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             .footer__logo {
                 flex-basis: 20%;
                 img {
@@ -85,9 +85,9 @@ footer {
             .footer__menu {
                 flex-basis: 55%;
                 ul {
+                    align-items: center;
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
                     justify-content: space-around;
                 }
             }

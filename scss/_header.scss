@@ -7,25 +7,25 @@
 }
 
 header {
-    background-color: $hdft-color;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    position: fixed;
-    z-index: 7;
-    height: 100px;
-    display: flex;
     align-items: center;
+    background-color: $hdft-color;
+    display: flex;
+    height: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 7;
     .header {
+        align-items: center;
         display: flex;
         justify-content: space-around;
-        align-items: center;
         .header__logo {
             flex-basis: 60%;
             img {
-                width: 90%;
-                margin: 0;
                 display: inline-block;
+                margin: 0;
+                width: 90%;
             }
         }
         nav {

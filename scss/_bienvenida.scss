@@ -4,36 +4,36 @@
     padding: 100px 0 50px 0;
     .hero__image {
         background-image: url(../images/anfield.jpg);
-        background-repeat: no-repeat;
         background-position: bottom center;
-        filter: saturate(.7);
-        margin-top: 0px;
+        background-repeat: no-repeat;
         background-size: cover;
+        filter: saturate(.7);
         height: 100vh;
+        margin-top: 0px;
         .bienvenida__h1 {
             h1 {
-                padding-top: 20px;
                 color: green;
-                text-shadow: 4px 4px 5px $bg-color;
-                letter-spacing: 2px;
                 font-size: 5rem;
                 font-weight: 800;
+                letter-spacing: 2px;
+                padding-top: 20px;
+                text-shadow: 4px 4px 5px $bg-color;
             }
             p {
-                text-align: center;
-                font-size: 2.2rem;
                 color: white;
                 font-family: $title-font;
+                font-size: 2.2rem;
                 font-weight: 700;
+                text-align: center;
                 text-shadow: 3px 3px 1px green;
             }
         }
         .hero__text {
-            text-align: center;
             color: $main-color;
-            padding-top: 70px;
-            font-size: 1.5rem;
             font-family: 'Acme', sans-serif;
+            font-size: 1.5rem;
+            padding-top: 70px;
+            text-align: center;
             text-shadow: 2px 2px 2px black;
         }
     }
@@ -42,8 +42,8 @@
 @media (min-width: 992px) {
     .bienvenida {
         .hero__image {
-            height: 100vh;
             background-attachment: fixed;
+            height: 100vh;
             .bienvenida__h1 {
                 h1 {
                     padding-top: 50px;
@@ -51,10 +51,6 @@
                 p {
                     font-size: 2.5rem;
                 }
-            }
-            .hero__text {
-                padding-top: 70px;
-                font-size: 1.5rem;
             }
         }
     }

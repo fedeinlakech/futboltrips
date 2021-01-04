@@ -6,11 +6,11 @@
         margin-bottom: 25px;
     }
     ul li {
-        list-style-type: none;
-        line-height: 1.7;
-        margin: 0 0 20px 20px;
-        display: flex;
         align-items: center;
+        display: flex;
+        line-height: 1.7;
+        list-style-type: none;
+        margin: 0 0 20px 20px;
         i {
             color: green;
             font-size: 1.5rem;
@@ -19,28 +19,28 @@
     }
     .nosotros__fotos {
         display: flex;
-        justify-content: space-evenly;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         margin-top: 50px;
         .nosotros__foto {
-            display: flex;
-            flex-direction: column;
-            width: 90%;
-            margin-bottom: 50px;
-            padding: 20px 7px 7px 7px;
+            background-color: $hdft-color;
             border: solid 3px green;
             border-radius: 15px;
-            background-color: $hdft-color;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            padding: 20px 7px 7px 7px;
+            width: 90%;
             img {
-                width: 90%;
                 margin: 0 auto;
+                width: 90%;
             }
             p {
                 font-size: 1rem;
-                line-height: 1.4;
-                text-align: center;
-                margin-top: 15px;
                 font-style: oblique;
+                line-height: 1.4;
+                margin-top: 15px;
+                text-align: center;
             }
         }
     }
