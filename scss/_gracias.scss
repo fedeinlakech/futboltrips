@@ -1,0 +1,24 @@
+#gracias {
+    padding-top: 120px;
+    .gracias__fontawesome {
+        p i {
+            color: green;
+            font-size: 8rem;
+            text-align: center;
+        }
+    }
+    p {
+        text-align: center;
+        font-size: 1.4rem;
+        &:last-of-type {
+            color: $main-color;
+            font-size: 1rem;
+            font-style: oblique;
+            padding-top: 40px;
+            i.gracias__confidencialidad {
+                font-size: 1.4rem;
+                padding: 0 15px;
+            }
+        }
+    }
+}

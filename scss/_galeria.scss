@@ -2,29 +2,34 @@
 
 .galeria {
     padding-top: 80px;
-    div.row {
+    .row {
         margin-top: 40px;
-        div {
-            margin-bottom: 40px;
-            div.galeria__estadio {
-                height: auto;
-                margin-bottom: 150px;
+        .galeria__estadesc {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            .galeria__estadio {
+                margin-bottom: 120px;
                 position: relative;
                 img {
                     border: 3px solid green;
+                    left: 50%;
+                    margin-left: -100px;
                     position: absolute;
                     transition: opacity 1s ease-in-out;
-                    width: 100%;
+                    width: 200px;
                     &.top:hover {
                         opacity: 0;
                     }
                 }
             }
-            p {
-                margin-bottom: 0;
-                text-align: center;
-                &:first-of-type {
-                    font-weight: 800;
+            .galeria__descripcion {
+                p {
+                    margin-bottom: 0;
+                    text-align: center;
+                    &:first-of-type {
+                        font-weight: 800;
+                    }
                 }
             }
         }

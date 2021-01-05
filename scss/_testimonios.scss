@@ -26,11 +26,15 @@
             img {
                 border-radius: 50%;
                 height: 50px;
+                transition: ease-in-out 2s;
+                &:hover {
+                    transform: rotate(360deg);
+                }
             }
             div.testimonios__testimonial--footerText {
                 p {
                     color: $main-color;
-                    margin: 0px 0 0 15px;
+                    margin: 0 0 0 15px;
                     &.testimonios__testimonial--description {
                         font-size: .8rem;
                         margin: 0 0 0 15px;
