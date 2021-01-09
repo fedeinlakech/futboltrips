@@ -44,9 +44,16 @@ footer {
                 margin-bottom: 0;
                 li {
                     padding-right: 15px;
-                    a i {
-                        color: green;
-                        font-size: 2rem;
+                    a {
+                        i {
+                            color: green;
+                            font-size: 2rem;
+                            transition: .5s;
+                            &:hover {
+                                color: $main-color;
+                                font-size: 2.5rem;
+                            }
+                        }
                     }
                 }
             }
@@ -61,7 +68,7 @@ footer {
         i {
             background-color: green;
             border-radius: 10px;
-            bottom: 50px;
+            bottom: 20px;
             color: white;
             font-size: 2rem;
             padding: 7px;
