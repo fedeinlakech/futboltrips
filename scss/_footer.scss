@@ -37,6 +37,9 @@
                                 }
                             }
                         }
+                        &:last-of-type {
+                            padding-right: 0;
+                        }
                     }
                 }
             }
@@ -99,9 +102,6 @@
                     flex-basis: 15%;
                     ul li {
                         padding-right: 25px;
-                        &:last-child {
-                            padding-right: 0;
-                        }
                     }
                 }
             }
