@@ -14,7 +14,7 @@
                 img {
                     margin: 0 auto;
                     width: 40%;
-                    height: auto;
+                    max-height: 50px;
                 }
             }
             .footer__menu {
@@ -75,6 +75,7 @@
                     img {
                         padding-top: 15px;
                         width: 100%;
+                        max-height: none;
                     }
                 }
                 .footer__menu {
