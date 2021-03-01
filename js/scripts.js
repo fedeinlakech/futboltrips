@@ -20,12 +20,12 @@ function bienvenida() {
 function respuesta_valor() {
     if (valor > tour) {
         var mayor = valor - tour;
-        alert("¡Es más barato! Te excediste por " + mayor + " dólares.");
+        alert("¡El tour es más barato de lo que pensabas! Cuesta " + mayor + " dólares menos.");
     } else if (valor == tour) {
         alert("¡Increíble! Acertaste!");
     } else {
         var menor = tour - valor;
-        alert("¡Tan barato no puede ser, incluye aéreos! Cuesta " + menor + " dólares más.");
+        alert("¡Tan barato no puede ser el tour, recordá que incluye aéreos! Cuesta " + menor + " dólares más de lo que suponías.");
     }
 }
 
