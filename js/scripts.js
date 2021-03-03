@@ -1,3 +1,31 @@
+//DESAFÍO CLASE 5
+
+class Viajero {
+    constructor(nombre, apellido, edad, tour) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.tour = tour;
+        this.temporada = temporada;
+    }
+}
+
+var nombre = prompt("Ingresá tu nombre:");
+var apellido = prompt("Ingresá tu apellido:");
+var edad = parseInt(prompt("Ingresá tu edad"));
+var tour = prompt("Ingresá el tour elegido:");
+var temporada = prompt("Ingresá la temporada elegida (primavera / verano / otoño / invierno");
+
+var viajero_1 = new Viajero(nombre, apellido, edad, tour);
+
+alert("Hola " + viajero_1.nombre + "! Elegiste viajar a " + viajero_1.tour + " en " + viajero_1.temporada + ".");
+
+
+
+
+
+/* DESAFÍO CLASE 4
+
 var nombre = prompt("¿Cómo te llamás?");
 var edad = parseInt(prompt("¿Qué edad tenés?"));
 var valor = parseFloat(prompt("¿Cuánto pensás que cuesta un tour? (en dólares)"));
@@ -34,3 +62,4 @@ function final() {
 }
 
 final();
+*/
