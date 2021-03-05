@@ -1,4 +1,62 @@
-//DESAFÍO CLASE 5
+// DESAFÍO CLASE 6
+
+var gran_bretana = ["Londres", "Birmingham", "Nottingham", "Leeds", "Sheffield", "Cardiff", "Liverpool", "Manchester", "Newcastle", "Sunderland", "Glasgow"];
+var espana = ["Madrid", "Barcelona", "Sevilla", "Valencia", "Bilbao", "San Sebastián", "La Coruña", "Palma de Mallorca", "Tenerife", "Las Palmas"];
+var italia = ["Roma", "Milán", "Turín", "Nápoles", "Florencia", "Venecia", "Verona", "Bérgamo", "Cagliari", "Palermo", "Génova"]
+
+console.log(gran_bretana, espana, italia);
+
+console.log(gran_bretana.length);
+console.log(espana.length);
+console.log(italia.length);
+
+
+console.log(gran_bretana.join("+"));
+console.log(espana.join("+"));
+console.log(italia.join("+"));
+
+
+console.log(gran_bretana.toString().toUpperCase());
+console.log(espana.toString().toUpperCase());
+console.log(italia.toString().toUpperCase());
+
+
+console.log(gran_bretana.toString().toLowerCase());
+console.log(espana.toString().toLowerCase());
+console.log(italia.toString().toLowerCase());
+
+
+console.log(gran_bretana.concat(espana, italia));
+
+
+var norte_britanico = gran_bretana.slice(6, 11);
+console.log(norte_britanico);
+
+var norte_espanol = espana.slice(4, 7);
+console.log(norte_espanol);
+
+var norte_italiano = italia.slice(2, 4);
+console.log(norte_italiano);
+
+
+gran_bretana.push("Stonehenge");
+console.log(gran_bretana);
+console.log(gran_bretana.length);
+
+espana.push("Valladolid");
+console.log(espana);
+console.log(espana.length);
+
+italia.push("Capri");
+console.log(italia);
+console.log(italia.length);
+
+
+
+
+/*
+
+- - - - - - - DESAFÍO CLASE 5 - - - - - - -
 
 class Viajero {
     constructor(nombre, apellido, edad, tour) {
@@ -16,7 +74,7 @@ var edad = parseInt(prompt("Ingresá tu edad"));
 var tour = prompt("Ingresá el tour elegido:");
 var temporada = prompt("Ingresá la temporada elegida (primavera / verano / otoño / invierno");
 
-var viajero_1 = new Viajero(nombre, apellido, edad, tour);
+var viajero_1 = new Viajero(nombre, apellido, edad, tour, temporada);
 
 alert("Hola " + viajero_1.nombre + "! Elegiste viajar a " + viajero_1.tour + " en " + viajero_1.temporada + ".");
 
@@ -24,7 +82,7 @@ alert("Hola " + viajero_1.nombre + "! Elegiste viajar a " + viajero_1.tour + " e
 
 
 
-/* DESAFÍO CLASE 4
+- - - - - - - DESAFÍO CLASE 4 - - - - - - -
 
 var nombre = prompt("¿Cómo te llamás?");
 var edad = parseInt(prompt("¿Qué edad tenés?"));
