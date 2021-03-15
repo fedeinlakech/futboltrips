@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" defer></script>
 </head>
 
 
@@ -519,9 +519,69 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
+        </section>
+
+        <!-- Sección Compras -->
+        <section id="compras" class="container compras">
+            <h2 class="wow pulse" data-wow-duration="2s" data-wow-iteration="2">Compra de Tours</h2>
+            <div class="row">
+                <div id="gran_bretana" class="compras__tour col-6 col-lg-4">
+                    <p>GRAN BRETAÑA</p>
+                    <div class="banderas">
+                        <img src="images/compras/UK.svg.png" alt="">
+                    </div>
+                </div>
+                <div id="espana" class="compras__tour col-6 col-lg-4">
+                    <p>ESPAÑA</p>
+                    <div class="banderas">
+                        <img src="images/compras/España.svg.png" alt="">
+                    </div>
+                </div>
+                <div id="italia" class="compras__tour col-6 col-lg-4">
+                    <p>ITALIA</p>
+                    <div class="banderas">
+                        <img src="images/compras/Italy.svg.png" alt="">
+                    </div>
+                </div>
+                <div id="alemania" class="compras__tour col-6 col-lg-4">
+                    <p>ALEMANIA</p>
+                    <div class="banderas">
+                        <img src="images/compras/Alemania.svg.png" alt="">
+                    </div>
+                </div>
+                <div id="br_ur" class="compras__tour col-6 col-lg-4">
+                    <p>BRASIL Y URUGUAY</p>
+                    <div class="banderas">
+                        <img src="images/compras/Brazil.svg.png" alt="">
+                    </div>
+                </div>
+                <div id="argentina" class="compras__tour col-6 col-lg-4">
+                    <p>ARGENTINA</p>
+                    <div class="banderas">
+                        <img src="images/compras/Argentina.svg.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <label for="tour">Tour Preferido:</label>
+                <select name="tour" id="tour">
+                    <option value="0">---Seleccionar---</option>
+                    <option value="gb">Gran Bretaña</option>
+                    <option value="es">España</option>
+                    <option value="it">Italia</option>
+                    <option value="al">Alemania</option>
+                    <option value="bu">Brasil-Uruguay</option>
+                    <option value="ar">Argentina</option>
+                </select>
+            </div>
+            <div>
+                <label for="cantidad">Cantidad de viajantes:</label>
+                <input type="text" id="cantidad" onkeypress="capturarEnter(event);">
+            </div>
+            <button type="button" onclick="enviar()">enviar</button>
         </section>
 
         <!-- Sección Contacto -->
@@ -544,7 +604,7 @@
                     <label for="wpp">Whatsapp:</label>
                     <input type="tel" name="wpp" id="wpp" placeholder="+11 1234-5678">
                 </div>
-                <div>
+                <!--<div>
                     <label for="tour">Tour Preferido:</label>
                     <select name="tour" id="tour">
                         <option value="0">---Seleccionar---</option>
@@ -555,7 +615,7 @@
                         <option value="bu">Brasil-Uruguay</option>
                         <option value="ar">Argentina</option>
                     </select>
-                </div>
+                </div> -->
                 <div class="news">
                     <label for="newsletter">¿Querés recibir nuestras novedades?</label>
                     <input type="checkbox" name="newsletter" id="newsletter" value="1">
@@ -570,13 +630,6 @@
             </form>
         </section>
     </main>
-
-    <!-- Sección Cotizador -->
-    <section id="compras" class="container">
-        <h2 class="wow pulse" data-wow-duration="2s" data-wow-iteration="2">Calcular y Comprar</h2>
-
-    </section>
-
 
 
     <footer>

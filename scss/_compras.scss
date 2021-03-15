@@ -1,0 +1,20 @@
+.compras {
+    padding-top: 40px;
+    .compras__tour {
+        margin-bottom: 60px;
+    }
+    p {
+        text-align: center;
+        font-size: 1.3rem;
+        .orange {
+            color: orange;
+        }
+    }
+    .banderas {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 200px;
+        }
+    }
+}
